@@ -1,0 +1,130 @@
+-- brand new log on
+ local Enter = script.Parent
+        local password = "elsa02"
+        local Log = Instance.new("ScreenGui")
+        local LogIn = Instance.new("Frame")
+        local UICorner = Instance.new("UICorner")
+        local Title = Instance.new("Frame")
+        local UICorner_2 = Instance.new("UICorner")
+        local TextLabel = Instance.new("TextLabel")
+        local KEY = Instance.new("TextBox")
+        local Enter = Instance.new("TextButton")
+
+        --Properties:
+
+        Log.Name = "Log"
+        Log.Parent = game.CoreGui
+        Log.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+        LogIn.Name = "Log in here"
+        LogIn.Parent = Log
+        LogIn.BackgroundColor3 = Color3.fromRGB(109, 110, 108)
+        LogIn.Position = UDim2.new(0.312690377, 0, 0.314398944, 0)
+        LogIn.Size = UDim2.new(0, 368, 0, 157)
+        LogIn.Draggable = true
+        LogIn.Active = true
+
+        UICorner.Parent = LogIn
+
+        Title.Name = "Title"
+        Title.Parent = LogIn
+        Title.BackgroundColor3 = Color3.fromRGB(109, 110, 108)
+        Title.Size = UDim2.new(0, 367, 0, 48)
+
+        UICorner_2.Parent = Title
+
+        TextLabel.Parent = Title
+        TextLabel.BackgroundColor3 = Color3.fromRGB(109, 110, 108)
+        TextLabel.BorderColor3 = Color3.fromRGB(109, 110, 108)
+        TextLabel.Position = UDim2.new(0.234332427, 0, 0.145833328, 0)
+        TextLabel.Size = UDim2.new(0, 196, 0, 33)
+        TextLabel.Font = Enum.Font.SourceSans
+        TextLabel.Text = "Login - Made by Erik Community"
+        TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+        TextLabel.TextScaled = true
+        TextLabel.TextSize = 14.000
+        TextLabel.TextWrapped = true
+
+        KEY.Name = "key"
+        KEY.Parent = LogIn
+        KEY.BackgroundColor3 = Color3.fromRGB(109, 110, 108)
+        KEY.BorderColor3 = Color3.fromRGB(109, 110, 108)
+        KEY.Position = UDim2.new(0.0597826056, 0, 0.47037518, 0)
+        KEY.Size = UDim2.new(0, 224, 0, 46)
+        KEY.Font = Enum.Font.SourceSans
+        KEY.Text = "Key Here"
+        KEY.TextColor3 = Color3.fromRGB(0, 0, 0)
+        KEY.TextScaled = true
+        KEY.TextSize = 14.000
+        KEY.TextWrapped = true
+
+        Enter.Name = "Enter"
+        Enter.Parent = LogIn
+        Enter.BackgroundColor3 = Color3.fromRGB(109, 110, 108)
+        Enter.BorderColor3 = Color3.fromRGB(109, 110, 108)
+        Enter.Position = UDim2.new(0.717391372, 0, 0.474225044, 0)
+        Enter.Size = UDim2.new(0, 79, 0, 48)
+        Enter.Font = Enum.Font.SourceSans
+        Enter.Text = "Enter"
+        Enter.TextColor3 = Color3.fromRGB(249, 233, 153)
+        Enter.TextScaled = true
+        Enter.TextSize = 14.000
+        Enter.TextWrapped = true
+        Enter.MouseButton1Click:Connect(function()
+            if KEY.Text == password then
+                KEY.Text = "Checking."
+                wait(0.5)
+                KEY.Text = "Checking.."
+                wait(0.5)
+                KEY.Text = "Checking..."
+                wait(0.5)
+                KEY.Text = "Checking."
+                wait(0.5)
+                KEY.Text = "Checking.."
+                wait(0.5)
+                KEY.Text = "Checking..."
+                wait(0.5)
+                KEY.Text = "Correct!"
+                wait(1)
+                LogIn.Visible = false
+                if game.PlaceId == 4754736350 then
+                     loadstring(game:HttpGet("https://raw.githubusercontent.com/ChillQetsiyah/khanama/main/idknew",true))();
+                elseif game.PlaceId == 6984676411 then
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/KwaiFruits/TheLua/main/Supernat"))()
+                elseif game.PlaceId == 5194554335 then
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/KwaiFruits/TheLua/main/yassifaction"))()
+                elseif game.PlaceId == 7191149331 then
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/KwaiFruits/TheLua/main/yassifaction"))()
+                elseif game.PlaceId == 527730528 then
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/luke1593247/Scripts/5e8ddfb69f798d1abbb6de004a5f813f2b1bb3f5/MagicTraining"))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/MagicTraining"))()
+                    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+                elseif game.PlaceId == 2768379856 then
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/Viserromero/Antex/master/SCP3008'))()
+                elseif game.PlaceId == 8708975067 then
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/KwaiFruits/TheLua/main/e'))()
+                elseif game.PlaceId == 7646796713 then
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/KwaiFruits/TheLua/main/UAUP'))()
+                elseif game.PlaceId == 537413528 then
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/KwaiFruits/TheLua/main/babft'))()
+                end
+                LogIn.Visible = false
+            else
+                KEY.Text = "Checking."
+                wait(0.5)
+                KEY.Text = "Checking.."
+                wait(0.5)
+                KEY.Text = "Checking..."
+                wait(0.5)
+                KEY.Text = "Checking."
+                wait(0.5)
+                KEY.Text = "Checking.."
+                wait(0.5)
+                KEY.Text = "Checking..."
+                wait(0.5)
+                KEY.Text = "Incorrect, try again."
+                wait(1)
+                KEY.Text = "KeyHere"
+                Enter.Text = "Enter"
+            end
+        end)
